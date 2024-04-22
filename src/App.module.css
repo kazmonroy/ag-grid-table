@@ -1,0 +1,17 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+}
+
+.wrapper {
+  overflow: hidden;
+  padding: 1rem;
+}

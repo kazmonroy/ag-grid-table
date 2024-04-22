@@ -1,0 +1,32 @@
+.ag-theme-quartz {
+  --ag-active-color: var(--color-primary);
+  --ag-row-hover-color: color-mix(
+    in srgb,
+    transparent,
+    var(--color-background-hover-hex) 4%
+  );
+  --ag-foreground-color: var(--color-text);
+  --ag-background-color: var(--color-background);
+  --ag-checkbox-background-color: var(--color-checkbox-background-color);
+}
+
+.ag-header-cell-text {
+  text-transform: uppercase;
+  color: var(--color-text-weak);
+}
+
+.ag-theme-quartz
+  .ag-column-select-header-filter-wrapper
+  .ag-input-wrapper::before,
+.ag-theme-quartz .ag-filter-toolpanel-search .ag-input-wrapper::before,
+.ag-theme-quartz .ag-mini-filter .ag-input-wrapper::before,
+.ag-theme-quartz .ag-filter-filter .ag-input-wrapper::before {
+  opacity: 66%;
+  filter: var(--color-icon-filter);
+}
+
+.badge {
+  &.swim {
+    color: red;
+  }
+}

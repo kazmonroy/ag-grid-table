@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &,
+  &.light-mode {
+    --color-text: #1e1f21;
+    --color-text-weak: #6d6e6f;
+    --color-text-disabled: #afabac;
+    --color-background: #fff;
+    --color-background-medium: #f6f8f9;
+    --color-background-strong: #e8ecee;
+    --color-background-hover-hex: #472419;
+    --color-border: #e4e1e0;
+    --color-border-strong: #d9d6d6;
+    --color-border-hover: #afabac;
+    --color-icon-filter: #ea1b0a;
+    --color-checkbox-background-color: #fff;
+
+    /* Button secondary */
+    --color-button-border-secondary: #cfcbcb;
+    --color-button-border-secondary-hover: #afabac;
+    --color-button-border-secondary-active: #6d6e6f;
+  }
+
+  &.dark-mode {
+    --color-text: #f5f4f3;
+    --color-text-weak: #a2a0a2;
+    --color-text-disabled: #424244;
+    --color-background: #1e1f21;
+    --color-background-medium: #252628;
+    --color-background-strong: #2a282d;
+    --color-background-hover-hex: #fcfcfc;
+    --color-border: #424244;
+    --color-border-strong: #565557;
+    --color-border-hover: #565557;
+    --color-icon-filter: invert(100%);
+    --color-checkbox-background-color: #fcfcfc;
+
+    /* Button secondary */
+    --color-button-border-secondary: #565557;
+    --color-button-border-secondary-hover: #6a696a;
+    --color-button-border-secondary-active: #a2a0a2;
+  }
+
+  --color-primary: #ea1b0a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, border 0.3s;
+}
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+input {
+  background-color: var(--color-background);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-button-border-secondary);
+  border-radius: 0.25rem;
+  color: inherit;
+
+  &:hover {
+    border: 1px solid var(--color-button-border-secondary-hover);
+  }
+
+  &:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+      0 0 6px rgba(229, 103, 23, 0.6);
+    outline: 0 none;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}

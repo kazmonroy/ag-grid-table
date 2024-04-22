@@ -1,0 +1,16 @@
+.button {
+  background-color: transparent;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+
+  &:hover {
+    background-color: var(--color-background-medium);
+  }
+
+  svg {
+    color: var(--color-primary);
+    font-size: 1rem;
+  }
+}
